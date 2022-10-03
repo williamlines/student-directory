@@ -1,17 +1,17 @@
 
 # first we list the students in an array
 students = [
-  "Dr. Hannibal Lecter", 
-  "Darth Vader", 
-  "Nurse Ratched", 
-  "Michale Corleone", 
-  "Alex DeLarge", 
-  "The Wicked Witch of the West",   
-  "Terminator", 
-  "Freddy Kreuger", 
-  "The Joker", 
-  "Joffrey Baratheon", 
-  "Norman Bates"
+  ["Dr. Hannibal Lecter", :november], 
+  ["Darth Vader", :november], 
+  ["Nurse Ratched", :november], 
+  ["Michale Corleone", :november], 
+  ["Alex DeLarge", :november], 
+  ["The Wicked Witch of the West", :november], 
+  ["Terminator", :november], 
+  ["Freddy Kreuger", :november], 
+  ["The Joker", :november], 
+  ["Joffrey Baratheon", :november], 
+  ["Norman Bates", :novmeber]
 ]
 student_count = students.length
 # define methods to print student names
@@ -23,7 +23,7 @@ end
 
 def print(names)
   names.each do |name|
-    puts name
+    puts "#{name[0]} (#{name[1]} cohort)"
   end
 end
 
